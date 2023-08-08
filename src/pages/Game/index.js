@@ -105,7 +105,7 @@ export default function Game() {
     } else {
       _status = (
         <StatusStyled>
-          <div className="text">Next player:</div>
+          <div className="text">Pemain Selanjutnya:</div>
           {xIsNext ? getIconPlayer("X") : getIconPlayer("O")}
         </StatusStyled>
       )
@@ -143,15 +143,15 @@ export default function Game() {
       </div>
       <GameInfoStyled>
         <InfoColumn>
-          <div className="label">Player 1(X)</div>
+          <div className="label">Pemain 1(X)</div>
           <div className="value">{localStorage.getItem("score_x") || "0"}</div>
         </InfoColumn>
         <InfoColumn>
-          <div className="label">Tie</div>
+          <div className="label">Mengikat</div>
           <div className="value">{localStorage.getItem("tie") || "0"}</div>
         </InfoColumn>
         <InfoColumn>
-          <div className="label">Player 2(Y)</div>
+          <div className="label">Pemain 2(Y)</div>
           <div className="value">{localStorage.getItem("score_y") || "0"}</div>
         </InfoColumn>
         {status}
